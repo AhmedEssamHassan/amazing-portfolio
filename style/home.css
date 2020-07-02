@@ -1,0 +1,97 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  /* background */
+  background: #ffb400;
+  background: -moz-linear-gradient(75deg, #ffb400 22%, #111 22%);
+  background: -webkit-linear-gradient(75deg, #ffb400 22%, #111 22%);
+  background: linear-gradient(75deg, #ffb400 22%, #111 22%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc107",endColorstr="#000000",GradientType=1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.first-container {
+  width: 100%;
+  height: 100%;
+  /* border: red solid 2px; */
+  /* background-color: rgba(0, 0, 0, .2); */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+/* rename for grade areas */
+img {
+  grid-area: img;
+  width: 71%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0.1px;
+}
+
+.introduction {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  font-size: large;
+  /* line-height: 25px; */
+  padding-right: 25px;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  width: 95.55%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 150px;
+  grid-template-rows: 1fr;
+  grid-template-areas: " img intro nav";
+}
+
+._1st{
+  font-size: 20px;
+}
+
+._2nd {
+  font-size: 45px;
+  font-weight: 540;
+}
+._3rd{
+  color: #ffb400;
+}
+
+._4th{
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.btn{
+  margin: 150px 0px;
+}
+
+a{
+  background-color: #ffb400;
+  border-radius: 25px;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+a>span{
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+}
+
