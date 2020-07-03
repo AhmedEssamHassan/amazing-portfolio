@@ -4,7 +4,6 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  /* background */
   background: #ffb400;
   background: -moz-linear-gradient(75deg, #ffb400 22%, #111 22%);
   background: -webkit-linear-gradient(75deg, #ffb400 22%, #111 22%);
@@ -16,8 +15,6 @@ html {
 .first-container {
   width: 100%;
   height: 100%;
-  /* border: red solid 2px; */
-  /* background-color: rgba(0, 0, 0, .2); */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -25,7 +22,6 @@ html {
   align-items: center;
 }
 
-/* rename for grade areas */
 img {
   grid-area: img;
   width: 71%;
@@ -43,7 +39,6 @@ img {
   align-items: flex-start;
   color: white;
   font-size: large;
-  /* line-height: 25px; */
   padding-right: 25px;
 }
 
@@ -55,7 +50,7 @@ main {
   width: 95.55%;
   height: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 200px;
+  grid-template-columns: 1fr 1fr 250px;
   grid-template-rows: 1fr;
   grid-template-areas: " img intro nav";
 }
@@ -93,49 +88,29 @@ a > span {
 }
 
 nav {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  align-items: center;
 }
 
-nav,
-ul,
-li,
-.img {
+ul {
+  height: 65%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+li {
+  /* margin: -55px 0; */
+  list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.home{
-  
-  background-color: #ffb400;
-}
-
-.img {
-  flex-direction: row-reverse;
-  min-width: 37px;
-  min-height: 37px;
-  border-radius: 50%;
-  padding: 5px;
-  justify-content: center;
-  text-decoration: none;
-  color: #551a8b;
-}
-
-li{
-  margin: 20px 0;
-  padding: 7px;
-}
-
-ul{
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  height: 60%;
-}
-
-
-
-li>a>img{
+li > a > .cover > img {
   width: 23px;
   height: 23px;
   padding: 3px;
@@ -143,105 +118,58 @@ li>a>img{
   border-radius: 50%;
 }
 
-li>a>h2{
-  margin: 0;
-  transition: display 2s;
-  display: none;
-}
-
-/* .show{
+.cover {
+  grid-area: cover;
   display: flex;
-  
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ************************************************************ */
-/* ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-} */
-
-/* .btn {
-  margin: 150px 0px;
-} */
-/* nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .home {
   background-color: #ffb400;
 }
 
-li {
-  width: auto;
-  height: auto;
-  margin: 15px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
+.nav-img {
+  grid-area: img;
+}
+
+.title {
+  margin: 0;
+  margin-right: 10px;
+  grid-area: title;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  margin: 0;
+}
+
+.img {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-areas: "title cover";
+  justify-items: end;
   align-items: center;
+  background-color: #ffb30000;
+  padding-left: 15px;
+  border-radius: 36px;
+  text-decoration: none;
+  color: #ffb30000;
+  transition: all .75s;
+  text-transform: uppercase;
+  font-size: 10px;
 }
 
-li> div > a {
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/iconfinder_additional_icons-10_2239886.png);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.img:hover{
+  transform: scaleX(50px);
+  background-color: #ffb400;
+  color: white;
 }
 
-.about,
-.portfolio,
-.contact,
-.blog {
-  /* transition: all .2s; 
-}
-
-/* .about:hover,
-.portfolio:hover,
-.contact:hover,
-.blog:hover {
-  transform: skewx(50deg);
-  transform: skew(50deg,50deg);
-} 
-
-.title{
-  background-color: white;
-  display: flex;
-  flex-direction: row-reverse;
-  width: auto;
-  height: auto;
-  justify-items: flex-start;
-  align-items: center;
-  background-color:#ffb400;
-  border-radius: 25%;
-}
-
-li >div > a > img {
-  width: 23px;
-  height: 23px;
-  padding: 3px;
-  background-color: white;
-  border-radius: 50%;
-}
-*/
