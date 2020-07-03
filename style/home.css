@@ -118,7 +118,7 @@ li,
   padding: 5px;
   justify-content: center;
   text-decoration: none;
-  color: white;
+  color: #551a8b;
 }
 
 li{
@@ -144,13 +144,15 @@ li>a>img{
 }
 
 li>a>h2{
-  display: none;
   margin: 0;
+  transition: display 2s;
+  display: none;
 }
 
-.show{
+/* .show{
   display: flex;
-}
+  
+} */
 
 
 
