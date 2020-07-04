@@ -84,7 +84,7 @@ main {
   color: white;
 }
 
-a>img{
+a > img {
   width: 15px;
   height: 15px;
   background-color: rgba(245, 222, 179, 0);
@@ -107,7 +107,6 @@ ul {
 }
 
 li {
-  /* margin: -55px 0; */
   list-style: none;
   display: flex;
   justify-content: flex-end;
@@ -140,46 +139,29 @@ li > a > .cover > img {
   grid-area: img;
 }
 
-.title {
-  margin: 0;
-  margin-right: 10px;
-  grid-area: title;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.show {
-  visibility: visible;
-  opacity: 1;
-  margin: 0;
-}
-
 .img {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-areas: "title cover";
-  justify-items: end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
+
   background-color: #ffb30000;
   padding-left: 15px;
   border-radius: 36px;
   text-decoration: none;
   color: #ffb30000;
-  transition: all .75s;
+  transition: all 0.75s;
   text-transform: uppercase;
   font-size: 10px;
 }
 
-.img:hover{
-  transform: scaleX(50px);
+.img:hover {
   background-color: #ffb400;
   color: white;
-  /* margin-right: -30px; */
 }
 
-.settings{
-  position: absolute ;
+.settings {
+  position: absolute;
   top: 33.5%;
   left: 0;
   width: 50px;
@@ -191,17 +173,21 @@ li > a > .cover > img {
   align-items: center;
 }
 
-
 @keyframes rotating {
   from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
 
-.settings>img{
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.settings > img {
   width: 25px;
   height: 25px;
   margin: auto auto;
@@ -210,6 +196,6 @@ li > a > .cover > img {
   animation: rotating 1.5s linear infinite;
 }
 
-.settings:hover{
+.settings:hover {
   cursor: pointer;
 }
