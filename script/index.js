@@ -21,4 +21,4 @@ for (let x = 0; x < links.length; x++) {
     titles[x].style.opacity = "0";
     titles[x].style.margin = "0";
   });
-}
+ }
