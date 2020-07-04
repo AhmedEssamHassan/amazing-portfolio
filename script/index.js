@@ -21,4 +21,16 @@ for (let x = 0; x < links.length; x++) {
     titles[x].style.opacity = "0";
     titles[x].style.margin = "0";
   });
- }
+}
+
+const btn = document.querySelector(".button");
+const img = document.createElement("img");
+img.style.marginLeft = "7px"
+img.src = "img/iconfinder_user_1608727.png";
+btn.addEventListener("mouseenter", () => {
+  btn.appendChild(img);
+});
+
+btn.addEventListener("mouseleave", () => {
+  btn.removeChild(img);
+});
