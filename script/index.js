@@ -95,11 +95,21 @@ for (let x = 0; x < colors.length; x++) {
     for (const el of changedElements) {
       el.style.color = colors[x].style.backgroundColor;
     }
+
+    for (let link of links) {
+      link.addEventListener("mouseenter", () => {
+        link.style.backgroundColor = colors[x].style.backgroundColor;
+      });
+      link.addEventListener("mouseleave", () => {
+        link.style.backgroundColor = "#ffffff00";
+      });
+    }
+
     btn.style.backgroundColor = colors[x].style.backgroundColor;
     cover.style.backgroundColor = colors[x].style.backgroundColor;
-    body.style.background = `-moz-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
-    body.style.background = `-webkit-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
-    body.style.background = `linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
+    body.style.background = `-moz-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
+    body.style.background = `-webkit-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
+    body.style.background = `linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
   });
 }
 
