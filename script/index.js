@@ -1,3 +1,4 @@
+
 // for navbar*******
 const links = document.querySelectorAll(".img");
 const listItems = document.querySelectorAll("li");
@@ -99,16 +100,16 @@ settingBtn.style.left = "0%";
 containerSwitcher.style.left = "-15.7%";
 
 settingBtn.addEventListener("click", () => {
-  settingBtn.style.transition = "left 0.4s linear"
-  containerSwitcher.style.transition = "left 0.4s 0.4s linear"
-  
+  settingBtn.style.transition = "left 0.4s linear";
+  containerSwitcher.style.transition = "left 0.4s 0.4s linear";
+
   settingBtn.style.left = "-4%";
   containerSwitcher.style.left = "0%";
 });
 
 closing.addEventListener("click", () => {
-  containerSwitcher.style.transition = "left 0.4s linear"
-  settingBtn.style.transition = "left 0.4s 0.4s linear"
+  containerSwitcher.style.transition = "left 0.4s linear";
+  settingBtn.style.transition = "left 0.4s 0.4s linear";
   settingBtn.style.left = "0%";
   containerSwitcher.style.left = "-15.7%";
 });
