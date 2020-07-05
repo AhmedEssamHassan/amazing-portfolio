@@ -292,6 +292,9 @@ li > a > .cover > img {
   align-content: center;
   background-color: #ffffff;
 }
+.colors>ul>li:hover{
+  cursor: pointer;
+}
 
 .purchase {
   display: flex;

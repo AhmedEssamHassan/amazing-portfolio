@@ -1,4 +1,3 @@
-
 // for navbar*******
 const links = document.querySelectorAll(".img");
 const listItems = document.querySelectorAll("li");
@@ -49,45 +48,59 @@ btn.addEventListener("mouseleave", () => {
 const colorsContainer = document.querySelector(".colors");
 
 const colors = colorsContainer.querySelectorAll("li");
+const changedElements = document.querySelectorAll(".change-color");
 
 for (let x = 0; x < colors.length; x++) {
   colors[x].style.width = "25px";
   colors[x].style.height = "25px";
   colors[x].style.borderRadius = "50%";
   colors[x].style.margin = "5px 5px";
+  colors[x].style.margin = "5px 5px";
 
   switch (x) {
     case 0:
-      colors[x].style.backgroundColor = "purple";
+      colors[x].style.backgroundColor = "#6957af";
       break;
     case 1:
-      colors[x].style.backgroundColor = "red";
+      colors[x].style.backgroundColor = "#f72b1c";
       break;
     case 2:
-      colors[x].style.backgroundColor = "blueviolet";
+      colors[x].style.backgroundColor = "#8a2be2";
       break;
     case 3:
-      colors[x].style.backgroundColor = "goldenrod";
+      colors[x].style.backgroundColor = "#4169e1";
       break;
     case 4:
-      colors[x].style.backgroundColor = "magenta";
+      colors[x].style.backgroundColor = "#daa520";
       break;
     case 5:
-      colors[x].style.backgroundColor = "yellowgreen";
+      colors[x].style.backgroundColor = "#ee6192";
       break;
     case 6:
-      colors[x].style.backgroundColor = "orange";
+      colors[x].style.backgroundColor = "#9acd32";
       break;
     case 7:
-      colors[x].style.backgroundColor = "green";
+      colors[x].style.backgroundColor = "#fa5b0f";
       break;
     case 8:
-      colors[x].style.backgroundColor = "yellow";
+      colors[x].style.backgroundColor = "#72b626";
       break;
     case 9:
-      colors[x].style.backgroundColor = "blue";
+      colors[x].style.backgroundColor = "#c84bcc";
       break;
   }
+  const body = document.querySelector("body");
+  const cover = document.querySelector(".cover");
+  colors[x].addEventListener("click", () => {
+    for (const el of changedElements) {
+      el.style.color = colors[x].style.backgroundColor;
+    }
+    btn.style.backgroundColor = colors[x].style.backgroundColor;
+    cover.style.backgroundColor = colors[x].style.backgroundColor;
+    body.style.background = `-moz-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
+    body.style.background = `-webkit-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
+    body.style.background = `linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`
+  });
 }
 
 // for dynamic positioning******
@@ -113,3 +126,5 @@ closing.addEventListener("click", () => {
   settingBtn.style.left = "0%";
   containerSwitcher.style.left = "-15.7%";
 });
+
+// for changing theme
