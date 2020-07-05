@@ -159,11 +159,15 @@ li > a > .cover > img {
   background-color: #ffb400;
   color: white;
 }
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
 
 .settings {
   position: absolute;
   top: 33.5%;
-  left: 0;
+  left: -5%;
   width: 50px;
   height: 50px;
   background-color: #ffffff;
@@ -171,6 +175,7 @@ li > a > .cover > img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s linear;
 }
 
 @keyframes rotating {
@@ -180,11 +185,6 @@ li > a > .cover > img {
   to {
     transform: rotate(360deg);
   }
-}
-
-.hide {
-  visibility: hidden;
-  opacity: 0;
 }
 
 .settings > img {
@@ -198,4 +198,98 @@ li > a > .cover > img {
 
 .settings:hover {
   cursor: pointer;
+}
+
+.container-switcher {
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  background-color: #ffffff;
+  top: 16%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 7px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.content-switcher {
+  width: 95%;
+  height: 95%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  color: #495057;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title-switcher>h2{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.close {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: rgba(255, 240, 245, 0);
+}
+
+.colors{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:auto;
+}
+
+.colors>ul{
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
+}
+
+.purchase{
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  width: auto;
+  height: auto;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 5px 10px;
+  background-color: #82b440;
+  border-radius: 36px;
+  text-decoration: none;
+  color: white;
+}
+
+.purchase>img{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
 }
