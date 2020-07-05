@@ -44,13 +44,7 @@ btn.addEventListener("mouseleave", () => {
   btn.removeChild(img);
 });
 
-// for setting btn*******
-const settingBtn = document.querySelector(".settings");
-settingBtn.addEventListener("click", () => {
-  // settingBtn.transition = "left 5s li"
-  settingBtn.style.left = "-4%";
-});
-
+// for color picker*******
 const colorsContainer = document.querySelector(".colors");
 
 const colors = colorsContainer.querySelectorAll("li");
@@ -94,3 +88,22 @@ for (let x = 0; x < colors.length; x++) {
       break;
   }
 }
+
+// for dynamic positioning******
+// for setting btn*******
+const settingBtn = document.querySelector(".settings");
+const containerSwitcher = document.querySelector(".container-switcher");
+const closing = containerSwitcher.querySelector(".close");
+
+settingBtn.style.left = "0%";
+containerSwitcher.style.left = "-15.7%";
+
+settingBtn.addEventListener("click", () => {
+  settingBtn.style.left = "-4%";
+  containerSwitcher.style.left = "0%";
+});
+
+closing.addEventListener("click", () => {
+  settingBtn.style.left = "0%";
+  containerSwitcher.style.left = "-15.7%";
+});

@@ -167,7 +167,7 @@ li > a > .cover > img {
 .settings {
   position: absolute;
   top: 33.5%;
-  left: -5%;
+  /* left: 0%; */
   width: 50px;
   height: 50px;
   background-color: #ffffff;
@@ -175,7 +175,7 @@ li > a > .cover > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s linear;
+  /* transition: left 0.4s linear; */
 }
 
 @keyframes rotating {
@@ -206,13 +206,14 @@ li > a > .cover > img {
   height: 220px;
   background-color: #ffffff;
   top: 16%;
-  left: 0%;
+  /* left: -15.7%; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px 7px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  /* transition: left .4s .4s linear; */
 }
 
 .content-switcher {
@@ -252,7 +253,9 @@ li > a > .cover > img {
   box-shadow: none;
   background-color: rgba(255, 240, 245, 0);
 }
-
+.close:hover{
+  cursor: pointer;
+}
 .colors{
   display: flex;
   justify-content: center;
@@ -289,7 +292,7 @@ li > a > .cover > img {
 }
 
 .purchase>img{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-right: 5px;
 }
