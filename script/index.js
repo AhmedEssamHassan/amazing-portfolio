@@ -120,13 +120,13 @@ const containerSwitcher = document.querySelector(".container-switcher");
 const closing = containerSwitcher.querySelector(".close");
 
 settingBtn.style.left = "0%";
-containerSwitcher.style.left = "-15.7%";
+containerSwitcher.style.left = "-30.7%";
 
 settingBtn.addEventListener("click", () => {
   settingBtn.style.transition = "left 0.4s linear";
   containerSwitcher.style.transition = "left 0.4s 0.4s linear";
 
-  settingBtn.style.left = "-4%";
+  settingBtn.style.left = "-10%";
   containerSwitcher.style.left = "0%";
 });
 
@@ -134,7 +134,7 @@ closing.addEventListener("click", () => {
   containerSwitcher.style.transition = "left 0.4s linear";
   settingBtn.style.transition = "left 0.4s 0.4s linear";
   settingBtn.style.left = "0%";
-  containerSwitcher.style.left = "-15.7%";
+  containerSwitcher.style.left = "-30.7%";
 });
 
 // for changing theme
