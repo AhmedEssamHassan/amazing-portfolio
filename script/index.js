@@ -50,6 +50,8 @@ const colorsContainer = document.querySelector(".colors");
 const colors = colorsContainer.querySelectorAll("li");
 const changedElements = document.querySelectorAll(".change-color");
 
+const miniNav = document.querySelector(".mini-nav");
+
 for (let x = 0; x < colors.length; x++) {
   colors[x].style.width = "25px";
   colors[x].style.height = "25px";
@@ -110,6 +112,7 @@ for (let x = 0; x < colors.length; x++) {
     body.style.background = `-moz-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
     body.style.background = `-webkit-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
     body.style.background = `linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
+    miniNav.style.backgroundColor = colors[x].style.backgroundColor;
   });
 }
 
@@ -137,4 +140,11 @@ closing.addEventListener("click", () => {
   containerSwitcher.style.left = "-30.7%";
 });
 
-// for changing theme
+// for showing fill-nav
+const fillNav = document.querySelector(".fill-nav");
+miniNav.addEventListener("click", () => {
+  fillNav.style.left = "0";
+  fillNav.style.flexDirection = "row";
+  fillNav.style.justifyContent = "center";
+  fillNav.style.alignItems = "flex-start";
+});
