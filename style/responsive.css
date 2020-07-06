@@ -17,6 +17,47 @@
     margin: 5px;
   }
 }
+
+/* *************************************** */
+
 @media only screen and (max-width: 900px) {
-  
+  .first-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #111;
+  }
+
+  .introduction {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    width: 80%;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    margin: auto;
+  }
+
+  main {
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.75fr;
+    grid-template-areas: "img" "intro";
+  }
+  nav {
+    display: none;
+  }
+  .settings, .container-switcher {
+    display: none;
+  }
 }
