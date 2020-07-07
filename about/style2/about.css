@@ -1,0 +1,235 @@
+@keyframes animate {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+
+body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background: #111;
+
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+}
+html {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  background-repeat: no-repeat;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: animate 0.75s linear;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* rename grid areas */
+.fst {
+  grid-area: fst;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.sec {
+  grid-area: sec;
+}
+.trd {
+  grid-area: trd;
+}
+
+.container {
+  width: 100%;
+  padding: 15px 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 75px;
+}
+
+.title {
+  text-align: center;
+}
+
+.back {
+  position: absolute;
+  top: -5%;
+  left: 1%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #222;
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  width: 100%;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-rows: 1fr ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  gap: 50px;
+}
+
+.l1 {
+  grid-area: l1;
+}
+.l2 {
+  grid-area: l2;
+}
+.l3 {
+  grid-area: l3;
+}
+.l4 {
+  grid-area: l4;
+}
+.l5 {
+  grid-area: l5;
+}
+.l6 {
+  grid-area: l6;
+}
+.l7 {
+  grid-area: l7;
+}
+.l8 {
+  grid-area: l8;
+}
+
+.personal-list > h1 {
+  margin: 0;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: white;
+}
+
+h1 > span {
+  color: #c4bebec2;
+}
+
+.personal-left-side {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.title-left{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.title-left > h3{
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.download{
+  grid-area: download;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.download > button{
+  background-color: #ffb400;
+  border: none;
+  width: 200px;
+  height: 40px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 36px;
+}
+
+.download > button:hover{
+  cursor: pointer;
+}
+
+.personal-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr;
+  gap: 20px;
+  grid-template-areas:
+    "l1 l5"
+    "l2 l6"
+    "l3 l7"
+    "l4 l8"
+    "download .";
+}
+
+/* trname for areas */
+.ex-years {
+  grid-area: ex-years;
+}
+.projects {
+  grid-area: projects;
+}
+.happy {
+  grid-area: happy;
+}
+.awards {
+  grid-area: awards;
+}
+.personal-right-side {
+  grid-area: right;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "ex-years projects"
+    "happy awards";
+  gap: 35px;
+  justify-content: center;
+  align-content: center;
+  padding: 5px 50px;
+}
+
+.same {
+  /* border-radius: 15px; */
+  border: 1px rgba(255, 255, 255, 0.541) solid;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 15px;
+}
+.same > h1 > span {
+  vertical-align: super;
+}
+.same > h1 {
+  margin: 0;
+  text-transform: uppercase;
+  /* font-size: 15px; */
+}
+.small{
+  font-size: 13px;
+  color: rgb(255, 255, 255);
+}
+.num {
+  font-size: 37px;
+  color: red;
+}
