@@ -120,3 +120,28 @@
     color: #ffd400;
   }
 }
+
+@media only screen and (max-width: 703px) {
+  ._2nd{
+    font-size: 40px;
+  }
+  ._3rd {
+    font-size: 14;
+  }
+}
+@media only screen and (max-width: 560px) {
+  ._2nd{
+    font-size: 35px;
+  }
+  ._3rd {
+    font-size: 13;
+  }
+}
+@media only screen and (max-width: 455px) {
+  ._2nd{
+    font-size: 25px;
+  }
+  ._3rd {
+    font-size: 13;
+  }
+}

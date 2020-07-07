@@ -339,7 +339,8 @@ li > a > .cover > img {
   margin: 3px;
 }
 
-.mini-nav:hover {
+.mini-nav:hover,
+.close-fill-nav > img {
   cursor: pointer;
 }
 
@@ -359,5 +360,22 @@ li > a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
+}
+
+.close-fill-nav{
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  right: 25px;
+  top: 25px;
+}
+
+.close-fill-nav > img{
+  background-color: rgba(17, 17, 17, 0);
+  box-shadow: none;
+  width: 35px;
+  height: 35px;
+  object-fit: fill;
+  margin: 3px;
 }
 

@@ -51,13 +51,15 @@ const colors = colorsContainer.querySelectorAll("li");
 const changedElements = document.querySelectorAll(".change-color");
 
 const miniNav = document.querySelector(".mini-nav");
+const cover = document.querySelector(".cover");
+const home = document.querySelectorAll(".home");
 
 for (let x = 0; x < colors.length; x++) {
   colors[x].style.width = "25px";
   colors[x].style.height = "25px";
   colors[x].style.borderRadius = "50%";
   colors[x].style.margin = "5px 5px";
-  colors[x].style.margin = "5px 5px";
+  // colors[x].style.margin = "5px 5px";
 
   switch (x) {
     case 0:
@@ -92,7 +94,6 @@ for (let x = 0; x < colors.length; x++) {
       break;
   }
   const body = document.querySelector("body");
-  const cover = document.querySelector(".cover");
   colors[x].addEventListener("click", () => {
     for (const el of changedElements) {
       el.style.color = colors[x].style.backgroundColor;
@@ -113,6 +114,8 @@ for (let x = 0; x < colors.length; x++) {
     body.style.background = `-webkit-linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
     body.style.background = `linear-gradient(75deg, ${colors[x].style.backgroundColor} 22%, #111 22%)`;
     miniNav.style.backgroundColor = colors[x].style.backgroundColor;
+    home[0].style.backgroundColor = colors[x].style.backgroundColor;
+    home[1].style.backgroundColor = colors[x].style.backgroundColor;
   });
 }
 
@@ -147,4 +150,11 @@ miniNav.addEventListener("click", () => {
   fillNav.style.flexDirection = "row";
   fillNav.style.justifyContent = "center";
   fillNav.style.alignItems = "flex-start";
+});
+
+// for closing fill-nav
+const close = document.querySelector(".close-fill-nav");
+
+close.addEventListener("click", () => {
+  fillNav.style.left = "-150%";
 });
