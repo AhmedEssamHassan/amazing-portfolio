@@ -108,3 +108,9 @@
 .uper{
   vertical-align: super;
 }
+
+.abslute{
+  position: fixed;
+  right: 15px;
+  z-index: 55;
+}
