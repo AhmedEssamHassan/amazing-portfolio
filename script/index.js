@@ -27,23 +27,6 @@ for (let x = 0; x < links.length; x++) {
   });
 }
 
-// for main btn*******
-const btn = document.querySelector(".button");
-const img = document.createElement("img");
-img.style.marginLeft = "7px";
-img.src = "img/iconfinder_user_1608727.png";
-img.className = "hide";
-btn.addEventListener("mouseenter", () => {
-  btn.appendChild(img);
-  img.style.visibility = "visible";
-  img.style.opacity = "1";
-  btn.style.transition = "width 2s";
-});
-
-btn.addEventListener("mouseleave", () => {
-  btn.removeChild(img);
-});
-
 // for color picker*******
 const colorsContainer = document.querySelector(".colors");
 
@@ -143,18 +126,36 @@ closing.addEventListener("click", () => {
   containerSwitcher.style.left = "-30.7%";
 });
 
-// for showing fill-nav
+// for main btn*******
+const btn = document.querySelector(".button");
+const img = document.createElement("img");
+img.style.marginLeft = "7px";
+img.src = "img/iconfinder_user_1608727.png";
+img.className = "hide";
+btn.addEventListener("mouseenter", () => {
+  btn.appendChild(img);
+  img.style.visibility = "visible";
+  img.style.opacity = "1";
+  btn.style.transition = "width 2s";
+});
+
+btn.addEventListener("mouseleave", () => {
+  btn.removeChild(img);
+});
+
+
+
+// for closing fill-nav
+const close = document.querySelector(".close-fill-nav");
 const fillNav = document.querySelector(".fill-nav");
+
+close.addEventListener("click", () => {
+  fillNav.style.left = "-150%";
+});
+// for showing fill-nav
 miniNav.addEventListener("click", () => {
   fillNav.style.left = "0";
   fillNav.style.flexDirection = "row";
   fillNav.style.justifyContent = "center";
   fillNav.style.alignItems = "flex-start";
-});
-
-// for closing fill-nav
-const close = document.querySelector(".close-fill-nav");
-
-close.addEventListener("click", () => {
-  fillNav.style.left = "-150%";
 });

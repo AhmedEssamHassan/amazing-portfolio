@@ -234,6 +234,11 @@ li > a > .cover > img {
   padding: 5px 7px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 60;
+}
+
+.header-front > h1 > span {
+  color: #ffb400;
 }
 
 .content-switcher {
