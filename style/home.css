@@ -12,13 +12,15 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+}
+.home-body{
   background: #ffb400;
   background: -moz-linear-gradient(75deg, #ffb400 22%, #111 22%);
   background: -webkit-linear-gradient(75deg, #ffb400 22%, #111 22%);
   background: linear-gradient(75deg, #ffb400 22%, #111 22%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc107",endColorstr="#000000",GradientType=1);
-  font-family: "Poppins", sans-serif;
-  background-repeat: no-repeat;
 }
 html {
   position: absolute;
@@ -351,7 +353,6 @@ li > a > .cover > img {
   background-color: #252525;
   left: -150%;
   z-index: 5;
-  /* padding-left: 20px; */
   transition: left 1.5s linear;
 }
 
