@@ -1,8 +1,8 @@
-.about-body{
+.about-body {
   background-color: #111111;
 }
 
-.header{
+.header {
   height: 170px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   font-size: 100px;
 }
 
-.header-front{
+.header-front {
   width: 100%;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
   font-size: 35px;
 }
 
-.personal-infos{
+.personal-infos {
   padding: 50px 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,8 +31,7 @@
   gap: 20px;
 }
 
-
-.personal-left{
+.personal-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -40,26 +39,25 @@
   text-transform: capitalize;
 }
 
-.personal-list{
+.personal-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   /* gap: 50px; */
 }
 
-.personal-list > h1{
+.personal-list > h1 {
   margin: 25px 10px;
   color: white;
   font-size: 18px;
   font-weight: 100;
 }
 
-.personal-list > h1 > span{
+.personal-list > h1 > span {
   color: rgba(255, 255, 255, 0.562);
-
 }
 
-.download{
+.download {
   width: 180px;
   padding: 7px 0;
   border: none;
@@ -72,7 +70,7 @@
   text-transform: uppercase;
 }
 
-.personal-right{
+.personal-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -92,29 +90,102 @@
   padding: 10px;
 }
 
-.personal-right > div  > h1{
+.personal-right > div > h1 {
   margin: 0;
 }
 
-.same{
+.same {
   color: white;
   font-size: 7px;
 }
 
-.num{
+.num {
   color: #ffb400;
   font-size: xx-large;
 }
 
-.uper{
+.uper {
   vertical-align: super;
 }
 
-.abslute{
+.abslute {
   position: fixed;
   right: 15px;
   z-index: 55;
 }
 
 .about {
-  background-color: #c72525;
+  background-color: #ffb300;
+}
+
+hr {
+  border-top: 1px solid #252525;
+  margin: 70px auto 55px;
+  max-width: 40%;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  border: red solid 1px;
+}
+
+.skills > h1 {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0;
+  font-size: 25px;
+}
+
+.html{
+  grid-area: html;
+}
+.css{
+  grid-area: css;
+}
+.javascript{
+  grid-area: js;
+}
+.php{
+  grid-area: php;
+}
+.jquery{
+  grid-area: jquery;
+}
+.wordpress{
+  grid-area: wordpress;
+}
+.react{
+  grid-area: react;
+}
+.angular{
+  grid-area: angular;
+}
+
+.diagram{
+  width: 90%;
+  height: 300px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "html css js react"
+  ". . ."
+  "php angular wordpress jquery";
+}
+
+.diagram > div{
+  margin-bottom: 30px;
+  border: yellow solid 1px;
+  width: 90%;
+  height: 90%;
+
+}
