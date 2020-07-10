@@ -11,49 +11,49 @@ const siwtchColors = (color) => {
       case 0:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 75%, ${color} 25%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 75%, ${color} 25%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 1:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 30%, ${color} 25%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 30%, ${color} 25%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 2:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 11%, ${color} 0%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 11%, ${color} 0%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 3:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 46%, ${color} 25%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 46%, ${color} 25%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 4:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 34%, ${color} 25%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 34%, ${color} 25%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 5:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 5%, ${color} 2%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 5%, ${color} 2%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 6:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 50%, ${color} 25%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 50%, ${color} 25%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
       case 7:
         cyrcles[
           x
-        ].style.borderImage = `linear-gradient(44deg, rgba(34,34,34,1) 35%, ${color} 5%)`;
+        ].style.borderImage = `linear-gradient(46deg, rgba(34,34,34,1) 35%, ${color} 5%)`;
         cyrcles[x].style.borderImageSlice = "5";
         break;
     }
