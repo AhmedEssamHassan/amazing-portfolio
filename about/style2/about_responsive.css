@@ -16,3 +16,13 @@
 	}
 }
 
+
+.mini-nav {
+  z-index: 5;
+  position: fixed;
+}
+
+.fill-nav2{
+	position: fixed;
+	margin: auto 0;
+}

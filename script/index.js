@@ -158,4 +158,6 @@ miniNav.addEventListener("click", () => {
   fillNav.style.flexDirection = "row";
   fillNav.style.justifyContent = "center";
   fillNav.style.alignItems = "flex-start";
+  console.log("sdjhfgvk");
+  
 });

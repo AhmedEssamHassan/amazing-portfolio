@@ -107,15 +107,25 @@ for (let x = 0; x < colors2.length; x++) {
 
     siwtchColors(colors2[x].style.backgroundColor);
 
-    for(const icon of icons) {
-      icon.style.backgroundColor = colors2[x].style.backgroundColor
+    for (const icon of icons) {
+      icon.style.backgroundColor = colors2[x].style.backgroundColor;
     }
-    
+
     download.style.backgroundColor = colors2[x].style.backgroundColor;
     about.style.backgroundColor = colors2[x].style.backgroundColor;
   });
 }
 
-
-
 siwtchColors("rgba(255,179,0,1)");
+
+// for showing fill-nav
+const fillNav2 = document.querySelector(".fill-nav2");
+
+const miniNav2 = document.querySelector(".mini-nav2");
+miniNav2.addEventListener("click", () => {
+  fillNav2.style.left = "0";
+  fillNav2.style.flexDirection = "row";
+  fillNav2.style.justifyContent = "center";
+  fillNav2.style.alignItems = "flex-start";
+  console.log("sdjhfgvk");
+});
