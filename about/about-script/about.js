@@ -129,3 +129,10 @@ miniNav2.addEventListener("click", () => {
   fillNav2.style.alignItems = "flex-start";
   console.log("sdjhfgvk");
 });
+
+// for closing fill-nav
+const close2 = document.querySelector(".close-fill-nav2");
+
+close2.addEventListener("click", () => {
+  fillNav2.style.left = "-150%";
+});

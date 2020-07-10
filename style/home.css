@@ -373,6 +373,7 @@ li > a {
   bottom: 25px;
   right: 25px;
   top: 25px;
+  z-index: 75;
 }
 
 .close-fill-nav > img{

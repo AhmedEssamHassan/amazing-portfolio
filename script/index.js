@@ -146,10 +146,10 @@ btn.addEventListener("mouseleave", () => {
 
 
 // for closing fill-nav
-const close = document.querySelector(".close-fill-nav");
+const close1 = document.querySelector(".close-fill-nav");
 const fillNav = document.querySelector(".fill-nav");
 
-close.addEventListener("click", () => {
+close1.addEventListener("click", () => {
   fillNav.style.left = "-150%";
 });
 // for showing fill-nav
