@@ -5,6 +5,8 @@ const about = document.querySelector(".about");
 
 const cyrcles = document.querySelectorAll(".cyrcle");
 
+const icons = document.querySelectorAll(".icon");
+
 const siwtchColors = (color) => {
   for (let x = 0; x < cyrcles.length; x++) {
     switch (x) {
@@ -65,7 +67,6 @@ for (let x = 0; x < colors2.length; x++) {
   colors2[x].style.height = "25px";
   colors2[x].style.borderRadius = "50%";
   colors2[x].style.margin = "5px 5px";
-  // colors2[x].style.margin = "5px 5px";
 
   switch (x) {
     case 0:
@@ -106,6 +107,10 @@ for (let x = 0; x < colors2.length; x++) {
 
     siwtchColors(colors2[x].style.backgroundColor);
 
+    for(const icon of icons) {
+      icon.style.backgroundColor = colors2[x].style.backgroundColor
+    }
+    
     download.style.backgroundColor = colors2[x].style.backgroundColor;
     about.style.backgroundColor = colors2[x].style.backgroundColor;
   });
