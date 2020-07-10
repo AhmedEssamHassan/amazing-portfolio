@@ -143,49 +143,42 @@ hr {
   font-size: 25px;
 }
 
-.html{
-  grid-area: html;
-}
-.css{
-  grid-area: css;
-}
-.javascript{
-  grid-area: js;
-}
-.php{
-  grid-area: php;
-}
-.jquery{
-  grid-area: jquery;
-}
-.wordpress{
-  grid-area: wordpress;
-}
-.react{
-  grid-area: react;
-}
-.angular{
-  grid-area: angular;
-}
 
 .diagram{
   width: 90%;
   height: 300px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 260px);
   align-items: center;
   justify-items: center;
-  grid-template-areas: "html css js react"
-  ". . ."
-  "php angular wordpress jquery";
+  justify-content: center;
+  row-gap: 20px;
 }
 
 .diagram > div{
-  margin-bottom: 30px;
   border: yellow solid 1px;
   width: 90%;
   height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cyrcle{
+  width: 130px;
+  height: 200px;
+  border: solid 10px;
+  border-radius: 50%;
+  border-image: linear-gradient(60deg, rgba(34,34,34,1) 25%, rgba(255,179,0,1) 25%);
+  border-image-slice: 5;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
 
 }
