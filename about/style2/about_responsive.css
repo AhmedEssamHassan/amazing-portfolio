@@ -1,0 +1,18 @@
+@media only screen and (min-width: 900px) and (max-width: 1125px) {
+	.icon{
+		top: 18%;
+		left: -15%;
+		z-index: 55;
+	}
+
+	.job-title{
+		margin: -9px 0 -2px;
+		font-size: 14px;
+	}
+
+	.icon::after{
+		top: 202%;
+    left: -11.5px;
+	}
+}
+
