@@ -43,40 +43,40 @@
   .item {
     flex-direction: column;
     justify-content: space-around;
-		align-items: flex-start;
-		margin-left: 65px;
-	}
-	.job-discription {
-		text-align: left;
-		width: 100%;
-	}
+    align-items: flex-start;
+    margin-left: 65px;
+  }
+  .job-discription {
+    text-align: left;
+    width: 100%;
+  }
   .icon {
     top: 17%;
     left: -12%;
   }
   .icon::after {
-		left: -15.5px;
-		z-index: 1;
-		top: 200%;
-	}
-	.last-section {
-		width: 500px;
-		margin:0 auto;
-	}
-	.last{
-		border-bottom: 1px rgba(255, 255, 255, 0.327) solid;
-		padding-bottom:25px;
-	}
-	.personal-infos {
-		grid-template-columns: 1fr;
+    left: -15.5px;
+    z-index: 1;
+    top: 200%;
+  }
+  .last-section {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .last {
+    border-bottom: 1px rgba(255, 255, 255, 0.327) solid;
+    padding-bottom: 25px;
+  }
+  .personal-infos {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-	}
-	.personal-left {
-		align-items: center;
-	}
-	.personal-list {
-		column-gap: 173px;
-	}
+  }
+  .personal-left {
+    align-items: center;
+  }
+  .personal-list {
+    column-gap: 173px;
+  }
 }
 @media only screen and (max-width: 703px) {
 }

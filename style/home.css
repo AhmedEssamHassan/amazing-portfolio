@@ -260,7 +260,7 @@ li > a > .cover > img {
   text-transform: uppercase;
   font-size: 10px;
   word-spacing: 3px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #495057;
   font-family: "Roboto", sans-serif;
 }
