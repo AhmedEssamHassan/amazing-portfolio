@@ -1,0 +1,33 @@
+.title-section {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 80px 0;
+    background-color: #111111;
+}
+
+.title-section h1 {
+    font-size: 55px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title-bg {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.07);
+}
+
+.settings {
+    left: 15px;
+}

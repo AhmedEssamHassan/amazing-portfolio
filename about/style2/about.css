@@ -234,6 +234,7 @@ hr {
   left: -13.5px;
   border-left: 1px solid #333;
   height: 105px;
+  z-index: 1;
 }
 
 .item {
