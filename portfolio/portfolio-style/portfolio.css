@@ -40,30 +40,12 @@
   height: 195px;
 }
 
-/* @keyframes ani {
-  from {
-    /* top: -220px; */
-  
-  /* to { */
-    /* opacity: 1; */
-  /* }
-} */ 
-
-/* .animate2 {
-  top: -18px;
-  width: 317px;
-  height: 197px;
-  background-color: red;
-  position: absolute;
-  border-radius: 10px;
-} */
-
-/* .project:hover .animate2{
-  animation: ani .3s linear 1 ;
-
-} */
-
 .project > img {
   width: 100%;
   object-fit: cover;
+}
+
+.project > div {
+  color: white;
+  font-size: 30px;
 }
