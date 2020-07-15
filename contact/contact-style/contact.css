@@ -91,6 +91,10 @@ svg{
   outline: none;
 }
 
+mail-me-img{
+  fill: #ffb300;
+}
+
 .input3 > button {
   background-color: #ffb300;
   width: 225px;
