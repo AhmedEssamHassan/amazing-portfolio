@@ -145,7 +145,7 @@ li > a > .cover > img {
   border-radius: 50%;
 }
 
-.cover {
+.cover,.cover2 {
   grid-area: cover;
   display: flex;
   justify-content: center;
