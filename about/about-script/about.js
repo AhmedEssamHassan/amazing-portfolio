@@ -9,7 +9,6 @@ const icons = document.querySelectorAll(".icon");
 
 const bgChange = document.querySelectorAll(".change-bg-color");
 
-const mailMeImg = document.querySelector("svg");
 
 const siwtchColors = (color) => {
   for (let x = 0; x < cyrcles.length; x++) {
@@ -111,7 +110,6 @@ for (let x = 0; x < colors2.length; x++) {
 
     siwtchColors(colors2[x].style.backgroundColor);
 
-    mailMeImg.style.fill = colors2[x].style.backgroundColor;
     
     for (const icon of icons) {
       icon.style.backgroundColor = colors2[x].style.backgroundColor;
@@ -119,8 +117,9 @@ for (let x = 0; x < colors2.length; x++) {
     for (const el of bgChange) {
       el.style.backgroundColor = colors2[x].style.backgroundColor;
     }
-    download.style.backgroundColor = colors2[x].style.backgroundColor;
+   
     about.style.backgroundColor = colors2[x].style.backgroundColor;
+    download.style.backgroundColor = colors2[x].style.backgroundColor;
   });
 }
 
