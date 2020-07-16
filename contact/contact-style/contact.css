@@ -91,9 +91,7 @@ svg{
   outline: none;
 }
 
-mail-me-img{
-  fill: #ffb300;
-}
+
 
 .input3 > button {
   background-color: #ffb300;
@@ -103,4 +101,33 @@ mail-me-img{
   border: none;
   outline: none;
   color: white;
+}
+
+.right > .sent{
+  background-color: #28a745;
+  width: 80%;
+  text-align: center;
+  align-self: center;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-radius: 30px;
+}
+.sent::before {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  position: relative;
+}
+
+.sent {
+  display: none;
+}
+
+.sent > img {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(255, 0, 0, 0);
+  box-shadow: none;
+  border-radius: 0;
+  margin-right: 5px;
 }
